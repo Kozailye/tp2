@@ -5,12 +5,15 @@
 import random #pour importer la fonction random
 import sys #pour la fonciton sys.exit (sortir du programme)
 
-hasard = random.randint(1, 1000)
+nbr1 = int(input("veuillez entre un premier nombre :"))
+nbr2 = int(input("veuillez entre un deuxieme nombre :"))
+
+hasard = random.randint(nbr1, nbr2)
 essaie =0
 
 
 
-valeur = int(input("veuillez entrer un nombre au hasard entre 1 et 1000 : "))
+valeur = int(input("veuillez entrer un nombre entre %d et %d pour deviner le nombre généré au hasard par l'ordinateur: " % (nbr1, nbr2)))
 
 #création de la fonction boucle qui as pour but de determiner si ton essaie est plus grand ou plus petit que le nombre generer par l'ordinateur
 #si la fonction n'est pas egale a la bonne reponse la boucle continue jusqu'a se que la bonne reponse soit trouver
