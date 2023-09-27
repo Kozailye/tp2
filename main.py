@@ -9,7 +9,7 @@ nbr1 = int(input("veuillez entre un premier nombre :"))
 nbr2 = int(input("veuillez entre un deuxieme nombre :"))
 
 hasard = random.randint(nbr1, nbr2)
-essaie =0
+essaie = 0
 
 
 
