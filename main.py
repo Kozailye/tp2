@@ -21,16 +21,14 @@ def devinete(): #fonction qui sert a lancer le jeu
 
         while valeur != hasard :
 
-           if valeur > hasard :
+            if valeur > hasard :
                print ("Ta valeur est trop grande")
-               essaie = essaie + 1
 
-               valeur = int(input("veuillez entrer un nombre entre %d et %d pour deviner le nombre généré au hasard par l'ordinateur: " % (nbr1, nbr2)))
-
-           elif valeur < hasard :
+            elif valeur < hasard :
                print ("Ta valeur est trop petite")
-               essaie = essaie + 1
-               valeur = int(input("veuillez entrer un nombre entre %d et %d pour deviner le nombre généré au hasard par l'ordinateur: " % (nbr1, nbr2)))
+
+            essaie = essaie + 1
+            valeur = int(input("veuillez entrer un nombre entre %d et %d pour deviner le nombre généré au hasard par l'ordinateur: " % (nbr1, nbr2)))
 
         else :
                print("Bravo! tu as trouvé la bonne reponse")
