@@ -9,16 +9,11 @@ def devinete(): #fonction qui sert a lancer le jeu
 #boucle qui sert a recommecer le jeu tant que l'utilisateur veut jouer
     while recommencer:
 
-
-
-
         nbr1 = int(input("veuillez entre un premier nombre :"))
         nbr2 = int(input("veuillez entre un deuxieme nombre :"))
 
         hasard = random.randint(nbr1, nbr2)
         essaie = 0
-
-
 
         valeur = int(input("veuillez entrer un nombre entre %d et %d pour deviner le nombre généré au hasard par l'ordinateur: " % (nbr1, nbr2)))
 
@@ -42,9 +37,7 @@ def devinete(): #fonction qui sert a lancer le jeu
                print ("nombre d'essaie total:")
                print(essaie + 1)
                rejouer = str(input("Voulez-vous rejouez, oui ou non : "))
-               if rejouer == "oui":
-                   recommencer == True
-               else :
+               if rejouer == "non":
                    recommencer = False
 
 devinete()
